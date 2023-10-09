@@ -719,10 +719,10 @@ svg{
         text-align: center;
     }
     .contact-about-row h5{
-        font-size: 15px;
+        font-size: 8px;
     }
     .contact-about-row p{
-        font-size: 12px;
+        font-size: 6px;
     }
     .foot-icon{
         grid-column: 1/span 3;
@@ -761,9 +761,14 @@ svg{
         font-size: 48px;
     }
     .form-row textarea{
-        font-size: 16px;
+        font-size: 8px;
     }
     .about-me-left>p{
         font-size: 14px;
+    }
+    .return-to-top{
+        height: 80px;
+        width: 80px;
+        font-size: 50px;
     }
 }
