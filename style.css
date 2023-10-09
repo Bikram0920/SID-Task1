@@ -167,6 +167,7 @@ h5,h3{
 .about-me-left>p{
     color: #999fb3;
     padding: 35px 0 43px;
+    font-size: 16px;
     /* border-bottom: 1px solid #e3dbdb; */
 }
 
@@ -761,5 +762,8 @@ svg{
     }
     .form-row textarea{
         font-size: 16px;
+    }
+    .about-me-left>p{
+        font-size: 14px;
     }
 }
