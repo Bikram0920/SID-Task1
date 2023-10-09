@@ -381,7 +381,7 @@ svg{
     width: 94%;
     margin-bottom: 20px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid #fff;
     border-radius: 4px;
     box-shadow: none;
@@ -717,6 +717,12 @@ svg{
     .contact-about-row{
         text-align: center;
     }
+    .contact-about-row h5{
+        font-size: 15px;
+    }
+    .contact-about-row p{
+        font-size: 12px;
+    }
     .foot-icon{
         grid-column: 1/span 3;
         justify-self: center;
@@ -752,5 +758,8 @@ svg{
     .resume-heading h2,
     .contact-heading h2{
         font-size: 48px;
+    }
+    .form-row textarea{
+        font-size: 16px;
     }
 }
