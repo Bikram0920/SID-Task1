@@ -745,5 +745,12 @@ svg{
     .intro_skill span{
         display: block;
     }
-    
+    .about-me-heading h2,
+    .edu-heading h2,
+    .skills-heading h2,
+    .portfolio-heading h2,
+    .resume-heading h2,
+    .contact-heading h2{
+        font-size: 48px;
+    }
 }
