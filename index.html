@@ -286,10 +286,11 @@
         <div class="container">
             <div class="contact-container-content">
                 <div class="contact-about">
-                    <form action="" class="contact-form" name="contact-form">
+                    <form action="" class="contact-form" name="contact-form"
+                    onsubmit="formValidation()">
                         <div class="form-row">
-                            <input type="text" required placeholder="Name*" class="form-input">
-                            <input type="email" required placeholder="Email*" class="form-input">
+                            <input type="text" required placeholder="Name*" class="form-input fname">
+                            <input type="email" required placeholder="Email*" class="form-input mail">
                         </div>
                         <div class="form-row">
                             <input type="text" placeholder="Subject" class="form-input">
@@ -356,7 +357,10 @@
             </div>
         </div>
     </footer>
+
     <script>
+
+        //TO top
         let btnClick=document.getElementById('scroll-top');
         window.onscroll=function(){scrollFunction()}
             function scrollFunction() {
@@ -367,23 +371,44 @@
             }
 }
 
-function topFunction() {
-document.documentElement.scrollTop = 0;
-}
-console.log(document.querySelector('#intro').style.height);
-
-//For Hamburger Menu
-let navbar=document.querySelector(".navbar");
-navbar.style.maxHeight="0px";
-
-function toggle(){
-        if(navbar.style.maxHeight=="0px"){
-            navbar.style.maxHeight="530px";
+        function topFunction() {
+        document.documentElement.scrollTop = 0;
         }
-        else{
-            navbar.style.maxHeight="0px";
-        }
-}
+        console.log(document.querySelector('#intro').style.height);
+
+        //For Hamburger Menu
+        let navbar=document.querySelector(".navbar");
+        navbar.style.maxHeight="0px";
+
+    function toggle(){
+            if(navbar.style.maxHeight=="0px"){
+                navbar.style.maxHeight="530px";
+            }
+            else{
+                navbar.style.maxHeight="0px";
+            }
+    }
+
+    //Form Validation
+    
+    function formValidation(){
+        let fname=document.querySelector(".fname").value;
+        let mail=document.querySelector('.mail').value;
+        let regName = /\d+$/g;
+        let regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+        
+        if (email == "" || !regEmail.test(email)) {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (fname == "" || regName.test(fname)) {
+        window.alert("Please enter your name properly.");
+        fname.focus();
+        return false;
+    }
+    return true;
+    }
     </script>
 </body>
 </html>
