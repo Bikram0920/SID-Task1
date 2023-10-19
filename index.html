@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
 </head>
 <body>
     <header class="top-area">
@@ -22,7 +23,6 @@
                         <li class="nav-item education"><a href="#education">Education</a></li>
                         <li class="nav-item skills"><a href="#skills">Skills</a></li>
                         <li class="nav-item portfolio"><a href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item resume"><a href="#resume">Resume</a></li>
                         <li class="nav-item contact"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -46,6 +46,7 @@
             </div>
             <p class="intro_skill"><span>Frontend</span> Web developer</p>
         </div>
+        <button>Download Resume</button>
     </section>
     <section id="about-me" class="about-me">
         <div class="about-me-heading"><h2>About Me</h2></div>
@@ -57,7 +58,7 @@
                 </div>
                 <div class="about-me-right">
                     <div class="about-me-img">
-                        <img src="./images/self-bg-blur.png" alt="">
+                        <img src="./images/dp-20.png" alt="">
                         <div class="about-social"></div>
                     </div>
                 </div>
@@ -212,69 +213,117 @@
                 <h2>Portfolio</h2>
             </div>
         </div>
-        <div class="container">
-            <div class="portfolio-container-content">
-                <div class="project-container">
-                    <div class="project-box">
-                        <div class="item">
-                            <img src="./images/personal-portolio.png" alt="">
-                            <div class="overlay">
-                                <a href="">Personal Portfolio</a>
+        <div class="container portfolio-container">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="./images/personal-portolio.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="pro-name">Personal Portfolio</h2>
+                                <p class="description">It is my Personal Portfolio website. It is a dynamic website which is made using HTML,CSS and JS.</p>
+    
+                                <button class="button"><a href="">View Project</a></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="item">
-                            <img src="./images/tic-tac-toe.jpg" alt="">
-                            <div class="overlay">
-                                <a href="https://bikramtictactoe.netlify.app/">Tic-Tac-Toe</a>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                        <img src="./images/tic-tac-toe.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="pro-name">Tic-Tac-Toe
+    </h2>
+                                <p class="description">It is a simple Tic Tac Toe project which is made using HTML,CSS and JS with little animation.</p>
+    
+                                <button class="button"><a href="https://bikramtictactoe.netlify.app/">View project</a></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="item">
-                            <img src="./images/calculator.png" alt="">
-                            <div class="overlay">
-                                <a href="https://bikramcalculator.netlify.app/">Calculator</a>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                        <img src="./images/calculator.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="pro-name">Calculator
+    </h2>
+                                <p class="description">It is a Calculator project with basic functionalities. It was made using HTMl,CSS and JS.</p>
+    
+                                <button class="button"><a href="https://bikramcalculator.netlify.app/">View Project</a></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="item">
-                            <img src="./images/resturant-site.png" alt="" class="resturant-site">
-                            <div class="overlay">
-                                <a href="https://bikramresturantwebsite.netlify.app/">Resturant Site</a>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                        <img src="./images/resturant-site.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="pro-name">Resturant Site
+    </h2>
+                                <p class="description">It is a static Resturant Website which is made using HTML and different features of CSS.</p>
+    
+                                <button class="button"><a href="https://bikramresturantwebsite.netlify.app/">View Project</a></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="item">
-                            <img src="./images/job-application.png" alt="">
-                            <div class="overlay">
-                                <a href="https://bikramjobapplication.netlify.app/">Job Application</a>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                        <img src="./images/job-application.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="pro-name">Job Application
+    </h2>
+                                <p class="description">It is a static Job Application Website which is made using HTML and different features of CSS.</p>
+    
+                                <button class="button"><a href="https://bikramjobapplication.netlify.app/">View Project</a></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="item">
-                            <img src="./images/apj-abdul-kalam.jpg" alt="">
-                            <div class="overlay">
-                                <a href="https://bikram0920.github.io/TributeWebsite.github.io/">tribute Site</a>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                        <img src="./images/apj-abdul-kalam.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="pro-name">Tribute Site
+    </h2>
+                                <p class="description">It is a static Tribute Website of Dr. APJ Abdul Kalam which is made using HTML and CSS.</p>
+    
+                                <button class="button"><a href="https://bikram0920.github.io/TributeWebsite.github.io/">View Project</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="resume" class="resume-sec">
-        <div class="resume-heading">
-            <h2>RESUME</h2>
-        </div>
-        <div class="container">
-            <div class="resume-container-content">
-                <img src="./images/Bikram_Resume.jpg" alt="">
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -319,7 +368,7 @@
                         </div>
                         <div class="contact-about-row">
                             <h5>Website</h5>
-                            <p>774-905-4377</p>
+                            <p>www.bikramportfolio.netlify.com</p>
                         </div>
                         <div class="foot-icon">
                             <ul class="icon-list">
@@ -358,57 +407,10 @@
         </div>
     </footer>
 
-    <script>
+        <!-- Swiper JS -->
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
 
-        //TO top
-        let btnClick=document.getElementById('scroll-top');
-        window.onscroll=function(){scrollFunction()}
-            function scrollFunction() {
-            if (document.documentElement.scrollTop > document.querySelector('#intro').style.height) {
-            btnClick.style.display = "block";
-            } else {
-            btnClick.style.display = "none";
-            }
-}
-
-        function topFunction() {
-        document.documentElement.scrollTop = 0;
-        }
-        console.log(document.querySelector('#intro').style.height);
-
-        //For Hamburger Menu
-        let navbar=document.querySelector(".navbar");
-        navbar.style.maxHeight="0px";
-
-    function toggle(){
-            if(navbar.style.maxHeight=="0px"){
-                navbar.style.maxHeight="530px";
-            }
-            else{
-                navbar.style.maxHeight="0px";
-            }
-    }
-
-    //Form Validation
-    
-    function formValidation(){
-        let fname=document.querySelector(".fname").value;
-        let mail=document.querySelector('.mail').value;
-        let regName = /\d+$/g;
-        let regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
-        
-        if (email == "" || !regEmail.test(email)) {
-        window.alert("Please enter a valid e-mail address.");
-        email.focus();
-        return false;
-    }
-    if (fname == "" || regName.test(fname)) {
-        window.alert("Please enter your name properly.");
-        fname.focus();
-        return false;
-    }
-    return true;
-    }
-    </script>
+<!-- JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
