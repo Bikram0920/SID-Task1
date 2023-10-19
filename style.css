@@ -123,7 +123,7 @@ p{
 }
 #intro button{
     bottom: 35%;
-    left: 45%;
+    left: 43%;
     position: absolute;
     animation-name: fadeUp;
     animation-duration: 1.5s;
@@ -139,6 +139,10 @@ p{
 #intro button:hover{
     cursor: pointer;
     background-color: #6400d6;
+}
+#intro button a{
+    text-decoration: none;
+    color: #fff;
 }
 @keyframes fadeUp {
     0% {
@@ -497,7 +501,7 @@ svg{
 }
 .slide-container{
     max-width: 1120px;
-    width: 100%;
+    width: 95%;
     padding: 80px 0;
   }
   .slide-content{
@@ -716,7 +720,7 @@ svg{
     }
     nav ul li{
         display: block;
-        margin-top: 10px;
+        margin-bottom: 10px;
     }
     nav ul li:nth-child(6){
         padding-bottom: 15px;
@@ -777,6 +781,8 @@ svg{
     #intro button{
         bottom: 40%;
         left: 42%;
+        padding: 20px;
+        font-size: 20px;
     }
     .about-me-content{
         flex-direction: column-reverse;
